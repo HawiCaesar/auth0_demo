@@ -2,10 +2,11 @@
   <h2 class="text-center"><img src="https://cdn.auth0.com/styleguide/1.0.0/img/badge.svg"></h2>
   <h2 class="text-center">Home</h2>
   <div class="text-center" ng-if="!isAuthenticated">
-    <p>You are not yet authenticated. <a href="#/login">Log in.</a></p>
+    <p>Seems like you are new. <a href="#/login">Log in.</a></p>
   </div>
   <div class="text-center" ng-if="isAuthenticated">
     <h2>Welcome, {{ profile.nickname }}</h2>
     <img ng-src="{{ profile.picture }}">
+    <h2>Authentication has never been so kind! Thanks Auth0 & this Fire man Prosper Otemuyiwa, @unicodeveloper</h2>
   </div>
 </div>
